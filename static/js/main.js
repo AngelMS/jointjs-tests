@@ -43,8 +43,19 @@ $(document).ready(function() {
     // Links are considered cells as well
     var link = new joint.dia.Link({
         source: { id: rect.id },
-        target: { id: rect2.id }
+        target: { id: rect2.id },
+        smooth: true
     });
+    
+    // properties can be set at construction time or afterwars using the .set method
+    // ===================================== (this snippet is the same than the above)
+    // var link = new joint.dia.Link({
+    //     target: { id: rect2.id }
+    // });
+    // 
+    // link.set("smooth", true)
+    // link.set("source", { id: rect.id })
+    // =====================================
     
     // The model collects cells (a term representing both elements and links)
     graph.addCells([rect, rect2, link]);
