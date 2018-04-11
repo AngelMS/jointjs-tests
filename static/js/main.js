@@ -5,7 +5,7 @@ $(document).ready(function() {
     // (joint.dia.Link). In JointJS (starting from version 0.6), you manipulate models, not views.
     
     
-    // This is the model to be used defined without coupling to the views - Models represents a diagrams
+    // This is the model to be used defined without coupling with the views - Models represents a diagrams
     var graph = new joint.dia.Graph;
     
     // This is a view using the model without defining its implementation
@@ -18,7 +18,7 @@ $(document).ready(function() {
     });
     
     // This is another view using the same model than the above one. Models can have multiple views
-    // "model has views" = "is used by multiple views"   -   (the former is the documentation notation)
+    // "model has views" = "is used by multiple views" - (the former is the documentation notation)
     var paperSmall = new joint.dia.Paper({
         el: $('#myholder-small'),
         width: 600,
@@ -60,11 +60,12 @@ $(document).ready(function() {
     // The model collects cells (a term representing both elements and links)
     graph.addCells([rect, rect2, link]);
     
-    
+    // Logs all events for all the elements
     // graph.on('all', function(eventName, cell) {
     //     console.log(arguments);
     // });
     
+    // Logs a particular element when it change its position
     rect.on('change:position', function(element) {
         console.log(element.id, ':', element.get('position'));
     });
