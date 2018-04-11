@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    // Diagrams consist of elements connected with links. A diagram in JointJS is represented by a model 
+    // joint.dia.Graph. This model then collects cells (a term representing both elements and links). 
+    // A cell could therefore be either an element (joint.dia.Element or its inheritants) or a link 
+    // (joint.dia.Link). In JointJS (starting from version 0.6), you manipulate models, not views.
+    
     
     // This is the model to be used defined without coupling to the views - Models represents a diagrams
     var graph = new joint.dia.Graph;
