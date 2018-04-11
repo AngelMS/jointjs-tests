@@ -47,7 +47,7 @@ $(document).ready(function() {
         smooth: true
     });
     
-    // properties can be set at construction time or afterwars using the .set method
+    // properties can be set at construction time or afterwards using the .set method
     // ===================================== (this snippet is the same than the above)
     // var link = new joint.dia.Link({
     //     target: { id: rect2.id }
