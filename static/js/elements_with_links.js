@@ -61,7 +61,8 @@ $(document).ready(function() {
         markup: '<rect/><a><text/></a>',
         attrs: {
             a: {
-                xlinkHref: 'https://jointjs.com'
+                xlinkHref: 'https://jointjs.com',
+                xlinkShow: "replace"
             },
             text: {
                 text: 'Only label as a link:\nhttps://jointjs.com'
