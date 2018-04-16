@@ -13,12 +13,12 @@ $(function() {
     var r1 = new joint.shapes.basic.Rect({
         position: { x: 20, y: 20 },
         size: { width: 200, height: 200 },
-        attrs: { rect: { fill: '#E74C3C' }, text: { text: 'El A' } }
+        attrs: { rect: { fill: '#E74C3C' }, text: { text: 'Parent' } }
     });
     var r2 = new joint.shapes.basic.Rect({
         position: { x: 270, y: 30 },
         size: { width: 100, height: 80 },
-        attrs: { rect: { fill: '#F1C40F' }, text: { text: 'El B' } }
+        attrs: { rect: { fill: '#F1C40F' }, text: { text: 'Child' } }
     });
     
     graph.addCells([r1, r2]);
