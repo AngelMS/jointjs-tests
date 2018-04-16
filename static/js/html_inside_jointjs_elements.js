@@ -1,12 +1,13 @@
 $(document).ready(function() {
 
     var graph = new joint.dia.Graph;
+    
     var paper = new joint.dia.Paper({
         el: $('#paper-html-elements'),
         width: 650,
         height: 400,
         gridSize: 1,
-        model: graph 
+        model: graph
     });
 
 // Create a custom element.
