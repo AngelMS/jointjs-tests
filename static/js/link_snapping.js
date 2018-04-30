@@ -4,7 +4,9 @@ $(function() {
     
     var paper = new joint.dia.Paper({
         el: $('#paper-link-snapping'),
-        width: 650, height: 200, gridSize: 1,
+        width: 650,
+        height: 200,
+        gridSize: 1,
         model: graph,
         defaultLink: new joint.dia.Link({
             attrs: { '.marker-target': { d: 'M 10 0 L 0 5 L 10 10 z' } }
