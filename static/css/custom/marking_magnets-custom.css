@@ -1,0 +1,11 @@
+
+
+/* port styling */
+.available-magnet {
+    stroke: rgba(230, 137, 14, 0.93);
+}
+
+/* element styling */
+.available-cell rect {
+    stroke-dasharray: 5, 2;
+}
